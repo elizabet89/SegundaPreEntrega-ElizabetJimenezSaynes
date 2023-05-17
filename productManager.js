@@ -15,11 +15,12 @@ class ProductManager {
       return "Todos los campos son obligatorios";
     }
 
-    for (let product of this.products) {
+  
+    this.products.forEach(product => {
       if (product.code === code) {
         return "El producto ya existe";
       }
-    }
+    });
 
     let producto = {
       id: this.Id,
@@ -42,8 +43,8 @@ class ProductManager {
       const products = JSON.parse(data);
       return products;
     } catch (error) {
-      console.error('Error al leer el archivo de productos:', error);
-      return [];
+      return ('Error al leer el archivo de productos:', error ,[]);
+      
     }
   }
 
@@ -82,7 +83,7 @@ class ProductManager {
         return "Producto no encontrado";
       }
     } catch (error) {
-      console.error('Error al leer o escribir en el archivo de productos:', error);
+    
       return 'Error al actualizar el producto';
     }
 
@@ -101,7 +102,6 @@ class ProductManager {
           return "Producto no encontrado";
         }
       } catch (error) {
-        console.error('Error al leer o escribir el archivo de productos:', error);
         return "Error al eliminar el producto";
       }
     }
