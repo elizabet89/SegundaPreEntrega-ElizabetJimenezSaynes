@@ -1,9 +1,0 @@
-let producto = {
-  id: 1,
-  title: "laptop",
-  description: "intel pentium 4 ",
-  price:5400,
-  thumbnail:"imagen",
-  code: "A098",
-  stock:20
-};
