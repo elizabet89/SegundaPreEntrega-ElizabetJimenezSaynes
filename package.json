@@ -1,0 +1,24 @@
+{
+  "name": "preentrega3-elizabethjimenezsaynes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizabet89/SegundaPreEntrega-ElizabetJimenezSaynes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizabet89/SegundaPreEntrega-ElizabetJimenezSaynes/issues"
+  },
+  "homepage": "https://github.com/elizabet89/SegundaPreEntrega-ElizabetJimenezSaynes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
